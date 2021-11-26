@@ -6,9 +6,32 @@
   <title>Find Meal For Your Ingredients</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel = "stylesheet" href = "style.css">
+  <link rel = "stylesheet" href = "login.css">
 </head>
 <body>
   
+
+   <!-- LOGIN POP-UP -->
+  <div class="login-popup">
+    <div class="box">
+        <div class="img-area">
+            <div class="img">
+            </div>
+        </div>
+        <div class="form">
+            <div class="close">&times;</div>
+            <h1>Log In</h1>
+            <form onsubmit="return validateForm()">
+                <div class="form-group">
+                    <input type="text" name="email" id="email" value="" placeholder="Email" class="form-control">
+                    <input type="password" name="password" id="password" value="" placeholder="Password" class="form-control">
+                    <label><input type="checkbox">Remember Me</label>
+                    <button type="submit" class="btn">login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <!-- container -->
   <div class = "container">
@@ -79,5 +102,6 @@
 
   <script src="./favourite/addfavourite.js"></script>
   <script src = "script.js"></script>
+  <script src = "action_login.js"></script>
 </body>
 </html>
