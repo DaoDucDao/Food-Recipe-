@@ -1,7 +1,7 @@
 let favRecipe = localStorage.getItem('favRecipe') || '[]';    //get the favRecipe array from the local storage
 favRecipe = JSON.parse(favRecipe);         // turn it into the array because it's still a string type
 
-const getFavlistItems = favListItems;
+// const getFavlistItems = favListItems;
 function addEventForAddToFavBtn() {      //create an event for the add favourite button
     const Favlist = document.getElementById('action_add_favourite');
     const getFav = document.querySelectorAll('#add-to-Fav')
