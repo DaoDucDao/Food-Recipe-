@@ -1,4 +1,4 @@
-let favRecipe = localStorage.getItem('favRecipe');    //get the favRecipe array from the local storage
+let favRecipe = localStorage.getItem('favRecipe') || '[]';    //get the favRecipe array from the local storage
 favRecipe = JSON.parse(favRecipe);         // turn it into the array because it's still a string type
 
 const getFavlistItems = favListItems;
