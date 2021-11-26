@@ -4,7 +4,7 @@ getRep = document.getElementById('get-rep');
 favNum = document.getElementById('favNumbers')
 
 let favRecipe = localStorage.getItem('favRecipe');  
-favRecipe = JSON.parse(favRecipe);
+favRecipe = JSON.parse(favRecipe);   // turn it into the array because it's still a string type
 console.log(favRecipe);
 
 favNum.innerHTML= favRecipe.length;
